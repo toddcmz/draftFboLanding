@@ -1,0 +1,125 @@
+/* Global Styles */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#393939;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5{
+  margin: 0;
+}
+
+/* Utility */
+
+
+/* Navabar */
+
+.navContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 4rem 1rem 4rem;
+  background-color: #393939;
+}
+
+.navLogoContainer{
+  align-items: center;
+}
+
+.navLogo{
+  width: 140px;
+  display: block;
+}
+
+.navButtonsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navButton{
+  padding-left: 1.5rem;
+}
+
+.navButton > a{
+  text-decoration: none;
+  color: white
+}
+
+/* Hero Section */
+.heroContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+
+.heroLeftContainer{
+  flex: 1;
+}
+
+.heroTitleContainer{
+
+}
+
+.heroTitleText{
+  font-size: 4rem;
+}
+
+.heroTitleTextYellow{
+  color: #f6c044;
+  font-size: 4rem;
+}
+
+.heroTagLineText{
+  color: #f6c044;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.heroDetailsContainer{
+
+}
+
+.heroTextSpan{
+  color:#267cb2;
+  font-weight: bold;
+}
+
+.heroImageContainer{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroButton{
+  background-color: #267cb2;
+  color: white;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.heroButton:hover{
+  background-color: #336284;
+}
+
+.heroImage{
+  width: 90%;
+}
+
+/* Services and Partners */
+
+
+/* About */
+
+
+/* Contact */
