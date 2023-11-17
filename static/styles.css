@@ -40,7 +40,6 @@ h1, h2, h3, h4, h5{
 .navButtonsContainer{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
 }
 
 .navButton{
@@ -52,16 +51,23 @@ h1, h2, h3, h4, h5{
   color: white
 }
 
+.navButton > a:hover{
+  color:#f6c044;
+}
+
 /* Hero Section */
 .heroContainer{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 5rem;
+  padding: 2rem 7rem 2rem 7rem;
+  height: 90vh;
+  min-height: 600px;
 }
 
 .heroLeftContainer{
   flex: 1;
+
 }
 
 .heroTitleContainer{
@@ -75,6 +81,7 @@ h1, h2, h3, h4, h5{
 .heroTitleTextYellow{
   color: #f6c044;
   font-size: 4rem;
+  display: block;
 }
 
 .heroTagLineText{
@@ -84,19 +91,12 @@ h1, h2, h3, h4, h5{
 }
 
 .heroDetailsContainer{
-
+  padding-right: 6rem;
 }
 
 .heroTextSpan{
   color:#267cb2;
   font-weight: bold;
-}
-
-.heroImageContainer{
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .heroButton{
@@ -112,14 +112,48 @@ h1, h2, h3, h4, h5{
   background-color: #336284;
 }
 
+.heroImageContainer{
+  flex: 1;
+  padding-top: 2rem;
+}
+
 .heroImage{
-  width: 90%;
+  width: 100%;
 }
 
 /* Services and Partners */
+.servicesPartnersContainer{
+  background-color: #393939;
+  min-height: 600px;
+}
 
+.servicesSectionTitleText{
+  color:white;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
 
 /* About */
+.aboutContainer{
+  min-height: 600px;
+}
 
+.aboutSectionTitleText{
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
 
 /* Contact */
+.contactContainer{
+  background-color: #393939;
+  min-height: 600px;
+}
+
+.contactSectionTitleText{
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
