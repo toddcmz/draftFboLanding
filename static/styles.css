@@ -14,6 +14,9 @@ h1, h2, h3, h4, h5{
   margin: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 /* Utility */
 
 
@@ -48,7 +51,7 @@ h1, h2, h3, h4, h5{
 
 .navButton > a{
   text-decoration: none;
-  color: white
+  color: white;
 }
 
 .navButton > a:hover{
@@ -60,14 +63,13 @@ h1, h2, h3, h4, h5{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 2rem 7rem 2rem 7rem;
-  height: 90vh;
+  padding: 2rem 6rem 2rem 6rem;
   min-height: 600px;
 }
 
 .heroLeftContainer{
-  flex: 1;
-
+  flex: .75;
+  min-width: 380px
 }
 
 .heroTitleContainer{
@@ -95,12 +97,12 @@ h1, h2, h3, h4, h5{
 }
 
 .heroTextSpan{
-  color:#267cb2;
+  color:#336284;
   font-weight: bold;
 }
 
 .heroButton{
-  background-color: #267cb2;
+  background-color: #336284;
   color: white;
   height: 2.5rem;
   width: 8rem;
@@ -109,7 +111,8 @@ h1, h2, h3, h4, h5{
 }
 
 .heroButton:hover{
-  background-color: #336284;
+  background-color: #267cb2;
+  cursor: pointer;
 }
 
 .heroImageContainer{
@@ -129,9 +132,69 @@ h1, h2, h3, h4, h5{
 
 .servicesSectionTitleText{
   color:white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   padding-top: 1.5rem;
+}
+
+.servicesCardsContainer{
+  padding: 0 2rem 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.servicesCard{
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.servicesCardImageContainer{
+  height: 200px;
+  width: 100%;
+  align-self: center;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicesCardGrowthImage{
+  height: 90%;
+}
+
+.servicesCardStaffImage{
+  height: 90%;
+}
+
+.servicesCardIndustryImage{
+  height: 75%
+}
+
+.servicesCardTitleText{
+  color: white;
+}
+
+.servicesCardTextDescription{
+  color: white;
+}
+
+.servicesDetailsButton{
+  background-color: #336284;
+  border: 2px solid white;
+  color: white;
+  height: 2.5rem;
+  width: 18rem;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.servicesDetailsButton:hover{
+  background-color: #267cb2;
+  cursor: pointer;
 }
 
 /* About */
@@ -140,7 +203,7 @@ h1, h2, h3, h4, h5{
 }
 
 .aboutSectionTitleText{
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   padding-top: 1.5rem;
 }
@@ -153,7 +216,31 @@ h1, h2, h3, h4, h5{
 
 .contactSectionTitleText{
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   padding-top: 1.5rem;
+}
+
+/* Footer */
+
+.footerContainer{
+  background-color: #393939;
+  border-top:2px solid rgb(63, 61, 61);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footerText {
+  margin: 0;
+  color: gray;
+  text-decoration: none;
+}
+
+.imageAttribution{
+  display: flex;
+  flex-direction: column;
 }

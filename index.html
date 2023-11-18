@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FBO Growth</title>
+  <link rel="icon" type="image/x-icon" href="./static/images/favicon_browser.png">
   <link rel="stylesheet" href="./static/styles.css">
 </head>
+
 <body>
-  
+
   <nav class="navContainer">
     <div class="navLogoContainer">
-      <a href="#">
-        <img class="navLogo" src="./static/images/solidYellow_greyBackground_noTagline.png" alt="FBO Growth Logo">
-      </a>
+      <img class="navLogo" src="./static/images/solidYellow_greyBackground_noTagline.png" alt="FBO Growth Logo">
     </div>
     <div class="navButtonsContainer">
-      <div class="navButton"> <a href="#">OUR SERVICES</a></div>
-      <div class="navButton"> <a href="#">ABOUT</a></div>
-      <div class="navButton"> <a href="#">CONTACT</a></div>
+      <div class="navButton"> <a href="#servicesAnchor">OUR SERVICES</a></div>
+      <div class="navButton"> <a href="#aboutAnchor">ABOUT</a></div>
+      <div class="navButton"> <a href="#contactAnchor">CONTACT</a></div>
     </div>
   </nav>
 
@@ -25,10 +26,10 @@
     <div class="heroLeftContainer">
       <div class="heroTitleContainer">
         <h1 class="heroTitleText">
-          Welcome to<br>  
+          Welcome to<br>
           <span class="heroTitleTextYellow">
-            FBO Growth 
-          </span>  
+            FBO Growth
+          </span>
         </h1>
         <h4 class="heroTagLineText">
           Achieving the Next Level
@@ -43,30 +44,92 @@
         </p>
       </div>
       <br>
-      <button class="heroButton">LEARN MORE</button>
+      <a href="#servicesAnchor"><button class="heroButton"><strong>LEARN MORE</strong></button></a>
     </div>
     <div class="heroImageContainer">
-      <img class="heroImage" src="./static/images/blueskyHangerMedium.jpg" alt="Man Working on Plane Engine" class="heroImage">
+      <img class="heroImage" src="./static/images/blueskyHangerMedium.jpg" alt="Man Working on Plane Engine"
+        class="heroImage">
     </div>
   </section>
 
   <section class="servicesPartnersContainer">
-    <h1 class="servicesSectionTitleText">
+    <h1 class="servicesSectionTitleText" id="servicesAnchor">
       Our Services
     </h1>
+    <div class="servicesCardsContainer">
+      <div class="servicesCard">
+        <div class="servicesCardImageContainer">
+          <img src="./static/images/growthIcon.png" alt="cartoonGraph" class="servicesCardGrowthImage">
+        </div>
+        <h3 class="servicesCardTitleText">
+          Sales & Growth
+        </h3>
+        <p class="servicesCardTextDescription">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti soluta perspiciatis et quasi officiis vero
+          a, vel ipsum repellendus aliquid accusamus doloremque repudiandae nulla, incidunt at, labore voluptatem
+          dolores cumque.
+        </p>
+      </div>
+      <div class="servicesCard">
+        <div class="servicesCardImageContainer">
+          <img src="./static/images/staffingIcon.png" alt="" class="servicesCardStaffImage">
+        </div>
+        <h3 class="servicesCardTitleText">
+          Staffing & Leadership
+        </h3>
+        <p class="servicesCardTextDescription">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nisi nesciunt dolorem sapiente praesentium, magnam
+          aliquid soluta iusto possimus sunt facilis explicabo quas impedit facere distinctio eum, autem quos iure!
+        </p>
+      </div>
+      <div class="servicesCard">
+        <div class="servicesCardImageContainer">
+          <img src="./static/images/industryIcon.png" alt="" class="servicesCardIndustryImage">
+        </div>
+        <h3 class="servicesCardTitleText">
+          Data & Industry
+        </h3>
+        <p class="servicesCardTextDescription">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. At libero vero minima natus hic, dignissimos porro
+          nemo. Voluptates aliquid rerum, nulla ullam laborum ea deleniti similique, mollitia sunt maxime aut.
+        </p>
+      </div>
+    </div>
+    <button class="servicesDetailsButton">
+        <strong>SEE OUR FULL TRAINING MENU</strong>
+    </button>
   </section>
 
   <section class="aboutContainer">
-    <h1 class="aboutSectionTitleText">
+    <h1 class="aboutSectionTitleText" id="aboutAnchor">
       About
     </h1>
   </section>
 
   <section class="contactContainer">
-    <h1 class="contactSectionTitleText">
+    <h1 class="contactSectionTitleText" id="contactAnchor">
       Get In Touch
     </h1>
   </section>
 
+  <footer class="footerContainer">
+    <div class="footerCopyrightTextContainer">
+      <p class="footerText">(c) FBO Growth 2024</p>
+    </div>
+    <div class="imageAttribution">
+      <p class="footerText">Site Image Attribution:</p>
+      <a class="footerText"
+        href="https://www.freepik.com/free-vector/business-management-vector_3238369.htm#query=growth%20icon&position=1&from_view=search&track=ais&uuid=63a3c7ff-2588-44f2-986b-ba315da44195">
+        rawpixel.com on Freepik
+      </a>
+      <a a class="footerText"
+        href="https://www.freepik.com/free-vector/business-people-meeting-managements-icons-set-mobile-marketing-effective-strategy-rapid-growth-isolated-vector-illustration_1158602.htm#query=staffing%20icon&position=1&from_view=search&track=ais&uuid=7c4f0b26-d46f-4a71-ada0-ca2c15197d53">
+        macrovector on Freepik
+      </a>
+    </div>
+    <img class="navLogo" src="./static/images/solidYellow_greyBackground_noTagline.png" alt="FBO Growth Logo">
+  </footer>
+
 </body>
+
 </html>
