@@ -80,6 +80,7 @@ html{
 
 .heroTitleText{
   font-size: 4rem;
+  color: white;
 }
 
 .heroTitleTextYellow{
@@ -129,6 +130,7 @@ html{
 
 .heroImage{
   width: 100%;
+  border-radius: 15px;
 }
 
 /* Services and Partners */
@@ -193,14 +195,16 @@ html{
   flex-direction: row;
   justify-content: center;
   gap: 4rem;
+  margin-bottom: 2rem;
 }
 
 .servicesDetailsButton{
-  border: 2px solid #393939;
   height: 2.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 4px;
+  border: none;
+  box-shadow: -3px 3px 0px #393939;
 }
 
 .seeCoursesButton{
@@ -233,8 +237,41 @@ html{
   font-size: 2rem;
   text-align: center;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   color: white;
 }
+
+.allAboutContainers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 6rem 0 6rem;
+  gap: 5rem;
+}
+
+.personAboutContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;  
+}
+
+.nameTitleContainer{
+  color:#f6c044;
+  border: 1px solid #f6c044;
+  flex: .75;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutDetailsContainer{
+  color: white;
+  border: 1px solid #f6c044;
+  flex: 1;
+}
+
 
 /* Contact */
 .contactContainer{
