@@ -29,6 +29,7 @@ html{
   align-items: center;
   padding:1rem 4rem 1rem 4rem;
   background-color: #393939;
+  border-bottom: 2px solid rgb(63, 61, 61)
 }
 
 .navLogoContainer{
@@ -60,6 +61,7 @@ html{
 
 /* Hero Section */
 .heroContainer{
+  background-color: #393939;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -84,20 +86,25 @@ html{
   color: #f6c044;
   font-size: 4rem;
   display: block;
+  /* -webkit-text-stroke: #393939 1px; */
+  /* text-shadow: #393939 1.5px 1.5px 0px; */
 }
 
 .heroTagLineText{
   color: #f6c044;
-  font-style: italic;
+  font-style:italic;
   font-size: 1.5rem;
+  /* -webkit-text-stroke: #393939 0.4px; */
+  /* text-shadow: #393939 0.75px 0.7px 0px; */
 }
 
 .heroDetailsContainer{
+  color: white;
   padding-right: 6rem;
 }
 
 .heroTextSpan{
-  color:#336284;
+  color: #f6c044;
   font-weight: bold;
 }
 
@@ -126,12 +133,12 @@ html{
 
 /* Services and Partners */
 .servicesPartnersContainer{
-  background-color: #393939;
+  background-color: white;
   min-height: 600px;
 }
 
 .servicesSectionTitleText{
-  color:white;
+  color:#393939;
   font-size: 2rem;
   text-align: center;
   padding-top: 1.5rem;
@@ -174,48 +181,69 @@ html{
 }
 
 .servicesCardTitleText{
-  color: white;
+  color: #393939;
 }
 
 .servicesCardTextDescription{
-  color: white;
+  color: #393939;
+}
+
+.servicesButtonsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .servicesDetailsButton{
-  background-color: #336284;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #393939;
   height: 2.5rem;
-  width: 18rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-radius: 4px;
-  display: block;
-  margin: 0 auto;
 }
 
-.servicesDetailsButton:hover{
+.seeCoursesButton{
+  background-color: #336284;
+  color: white;
+}
+
+.seeOtherServicesButton{
+  background-color: #f6c044;
+  color:#393939;
+}
+
+.seeCoursesButton:hover{
   background-color: #267cb2;
+  cursor: pointer;
+}
+
+.seeOtherServicesButton:hover{
+  background-color: #f7b00b;
   cursor: pointer;
 }
 
 /* About */
 .aboutContainer{
   min-height: 600px;
+  background-color: #393939;
 }
 
 .aboutSectionTitleText{
   font-size: 2rem;
   text-align: center;
   padding-top: 1.5rem;
+  color: white;
 }
 
 /* Contact */
 .contactContainer{
-  background-color: #393939;
+  background-color: white;
   min-height: 600px;
 }
 
 .contactSectionTitleText{
-  color: white;
+  color: #393939;
   font-size: 2rem;
   text-align: center;
   padding-top: 1.5rem;
