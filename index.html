@@ -125,7 +125,7 @@
         </div>
         <div class="nameTitleContainer">
           <h3>Dave</h3>
-          <h4>Co-Founder & Principal</h4>
+          <h4>Founder & Principal</h4>
         </div>
       </div>
     </div>
@@ -135,9 +135,33 @@
     <h1 class="contactSectionTitleText" id="contactAnchor">
       Get In Touch
     </h1>
-    <form action="">
-
-    </form>
+    <div class="contactInfoAndFormContainer">
+      <div class="contactInfoDetailsContainer">
+        <h3>P.O. Box ---</h3>
+        <h3 class="contactAddressLastLine">Broomfield, CO 80020</h3>
+        <h3>fboGrowth@someEmail.com</h3>
+        <h3>555.555.5555</h3>
+      </div>
+      <div class="contactFormContainer">
+      <form class="contactForm" action="">
+        <label for="contactNameField">Name</label>
+          <input type="text" id="contactNameField" name="contactNameField" class="contactField"/>
+        <label for="contactCompanyField">Company</label>
+          <input type="text" id="contactCompanyField" name="contactCompanyField" class="contactField">
+        <label for="contactEmailField">Email</label>
+          <input type="email" id="contactEmailField" name="contactEmailField" class="contactField">
+        <label for="contactPhoneField">Phone</label>
+          <input type="text" id="contactPhoneField" name="contactPhoneField" class="contactField">
+        <label for="contactCoursesField">I'm interested in these courses:</label>
+          <input type="checkbox" id="contactCoursesField" name="contactCoursesField" class="contactField">
+        <label for="contactServicesField">I'm interested in these services:</label>
+          <input type="checkbox" id="contactServicesField" name="contactServicesField" class="contactField">
+        <label for="contactMessageField">Message</label>
+          <textarea class="contactField" name="contactMessageField" id="contactMessageField" cols="60" rows="5"></textarea>
+        <button class="contactSubmitButton" type="submit">SEND US YOUR INQUIRY</button>
+      </form>
+    </div>
+  </div>
   </section>
 
   <footer class="footerContainer">
@@ -158,6 +182,7 @@
     <img class="navLogo" src="./static/images/solidYellow_greyBackground_noTagline.png" alt="FBO Growth Logo">
   </footer>
 
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

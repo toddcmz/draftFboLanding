@@ -291,6 +291,39 @@ html{
   padding-top: 1.5rem;
 }
 
+.contactInfoAndFormContainer{
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.contactInfoDetailsContainer{
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contactAddressLastLine{
+margin-bottom: 1.5rem;
+}
+
+.contactForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.contactField{
+  margin-bottom: 1rem;
+}
+
+.contactSubmitButton{
+  margin-bottom: 3rem;
+}
+
 /* Footer */
 
 .footerContainer{
