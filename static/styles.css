@@ -146,6 +146,19 @@ html{
   padding-top: 2rem;
 }
 
+.servicesSectionHeaderSubtext{
+  text-align: center;
+}
+.servicesSectionHeaderSubtext::before,
+.servicesSectionHeaderSubtext::after{
+  display: inline-block;
+  content: "";
+  border-top: 1px solid black;
+  width: 5rem;
+  margin: 0 1rem;
+  transform: translateY(-.3rem)
+}
+
 .servicesCardsContainer{
   padding: 0 2rem 0 2rem;
   display: flex;
@@ -310,10 +323,6 @@ html{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-
-.contactAddressLastLine{
-margin-bottom: 1.5rem;
 }
 
 .contactForm{
