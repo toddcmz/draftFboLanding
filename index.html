@@ -47,8 +47,11 @@
       <a href="#servicesAnchor"><button class="heroButton"><strong>LEARN MORE</strong></button></a>
     </div>
     <div class="heroImageContainer">
-      <img class="heroImage" src="./static/images/blueskyHangerMedium.jpg" alt="Man Working on Plane Engine"
-        class="heroImage">
+      <img 
+        class="heroImageWide" 
+        src="./static/images/blueskyHanger_1800x1199.jpg" 
+        alt="Under a plane wing in a hanger"
+      >
     </div>
   </section>
 
@@ -56,10 +59,6 @@
     <h1 class="servicesSectionTitleText" id="servicesAnchor">
       Our Services
     </h1>
-    <br>
-    <h3 class="servicesSectionHeaderSubtext">
-      Collaboratively Helping FBOs Meet Their Business Goals
-    </h3>
     <div class="servicesCardsContainer">
       <div class="servicesCard">
         <div class="servicesCardImageContainer">
@@ -69,9 +68,8 @@
           Courses & Training
         </h3>
         <p class="servicesCardTextDescription">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti soluta perspiciatis et quasi officiis vero
-          a, vel ipsum repellendus aliquid accusamus doloremque repudiandae nulla, incidunt at, labore voluptatem
-          dolores cumque.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nisi nesciunt dolorem sapiente praesentium, magnam
+          aliquid soluta iusto possimus sunt facilis explicabo quas impedit facere distinctio eum, autem quos iure!
         </p>
       </div>
       <div class="servicesCard">
@@ -169,20 +167,23 @@
       </div>
       <div class="contactFormContainer">
       <form class="contactForm" action="">
-        <label for="contactNameField">Name</label>
-          <input type="text" id="contactNameField" name="contactNameField" class="contactField"/>
+        <div class="formNamePhoneContainer">
+          <div class="formNameContainer">
+            <label for="contactNameField">Name</label>
+              <input type="text" id="contactNameField" name="contactNameField" class="contactField"/>
+          </div>
+          <div class="formPhoneContainer">
+            <label for="contactPhoneField">Phone</label>
+              <input type="text" id="contactPhoneField" name="contactPhoneField" class="contactField">
+          </div>
+        </div>
         <label for="contactCompanyField">Company</label>
           <input type="text" id="contactCompanyField" name="contactCompanyField" class="contactField">
         <label for="contactEmailField">Email</label>
           <input type="email" id="contactEmailField" name="contactEmailField" class="contactField">
-        <label for="contactPhoneField">Phone</label>
-          <input type="text" id="contactPhoneField" name="contactPhoneField" class="contactField">
-        <label for="contactCoursesField">I'm interested in these courses:</label>
-          <input type="checkbox" id="contactCoursesField" name="contactCoursesField" class="contactField">
-        <label for="contactServicesField">I'm interested in these services:</label>
-          <input type="checkbox" id="contactServicesField" name="contactServicesField" class="contactField">
+
         <label for="contactMessageField">Message</label>
-          <textarea class="contactField" name="contactMessageField" id="contactMessageField" cols="60" rows="5"></textarea>
+          <textarea class="contactFieldFullMessage" name="contactMessageField" id="contactMessageField" cols="60" rows="5"></textarea>
         <button class="contactSubmitButton" type="submit">SEND US YOUR INQUIRY</button>
       </form>
     </div>

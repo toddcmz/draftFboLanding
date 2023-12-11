@@ -128,9 +128,15 @@ html{
   padding-top: 2rem;
 }
 
-.heroImage{
+.heroImageWide{
   width: 100%;
   border-radius: 8px;
+}
+
+@media (max-width: 1100px){
+  .heroContainer{
+    flex-direction: column;
+  }
 }
 
 /* Services and Partners */
@@ -163,13 +169,15 @@ html{
   padding: 0 2rem 0 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .servicesCard{
   padding: 1.5rem 2rem 1.5rem 2rem;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  max-width: 420px;
 }
 
 .servicesCardImageContainer{
@@ -201,7 +209,7 @@ html{
 .servicesCardTitleText::before{
   content: "";
   border: 3px solid #f6c044;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 
 .servicesCardTextDescription{
@@ -243,6 +251,13 @@ html{
 .seeOtherServicesButton:hover{
   background-color: #f7b00b;
   cursor: pointer;
+}
+
+@media (max-width: 1100px){
+  .servicesCardsContainer{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* About */
@@ -295,6 +310,11 @@ html{
   border-radius: 20px;
 }
 
+@media (max-width: 1100px){
+  .personAboutContainer{
+    flex-direction: column;
+  }
+}
 
 /* Contact */
 .contactContainer{
@@ -330,12 +350,45 @@ html{
   flex-direction: column;
 }
 
+.formNamePhoneContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.formNameContainer, .formPhoneContainer{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .contactField{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  height: 2rem;
+  border-radius: 6px;
+  border: 2px solid #757575;
+}
+
+.contactFieldFullMessage{
+  border-radius: 6px;
+  border: 2px solid #757575;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .contactSubmitButton{
   margin-bottom: 3rem;
+}
+
+@media (max-width: 1100px){
+  .contactInfoAndFormContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactForm{
+    max-width: 80vw;
+  }
 }
 
 /* Footer */
