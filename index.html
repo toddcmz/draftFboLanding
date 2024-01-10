@@ -166,7 +166,7 @@
         <h3>720.241.6765</h3>
       </div>
       <div class="contactFormContainer">
-      <form class="contactForm" action="">
+      <form action="" class="contactForm" id="contactForm">
         <div class="formNamePhoneContainer">
           <div class="formNameContainer">
             <label for="contactNameField">Name</label>
@@ -211,7 +211,7 @@
             id="contactMessageField" 
             cols="60" 
             rows="5"></textarea>
-        <button class="contactSubmitButton" type="submit">SEND US YOUR INQUIRY</button>
+        <button class="contactSubmitButton" id="contactSubmitButton" type="submit">SEND US YOUR INQUIRY</button>
       </form>
     </div>
   </div>
@@ -234,7 +234,10 @@
     </div>
     <img class="navLogo" src="./static/images/solidYellow_greyBackground_noTagline.png" alt="FBO Growth Logo">
   </footer>
-
+  
+  <!-- this is for the validate() function in the main script, for
+  form validation. -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
