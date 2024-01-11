@@ -431,7 +431,7 @@ html{
 
 .contactSubmitButton{
   margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   width: 12rem;
   height: 2.5rem;
   background-color: #336284;
@@ -444,6 +444,13 @@ html{
 .contactSubmitButton:hover{
   background-color: #267cb2;
   cursor: pointer;
+}
+
+.messageSentConfirmationLine{
+  color: #25a514;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
 }
 
 @media (max-width: 1100px){

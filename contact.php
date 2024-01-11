@@ -33,10 +33,11 @@
     $emailSubject = 'testing fbo growth contact form';
     $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=utf-8'];
     $bodyParagraphs = ["Name: {$name}", "Phone: {$phone}", "Company: {$company}", "Email: {$email}", "Message:", $message];
-    $body = joing(PHP_EOL, $bodyParagraphs);
+    $body = join(PHP_EOL, $bodyParagraphs);
 
     mail($emailToAddress, $emailSubject, $body, $headers);
     echo "sent the email";
+    echo $body;
   }
 
   if (!empty($errors)) {

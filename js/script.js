@@ -53,7 +53,21 @@ const formSubmissionButton = document.getElementById('contactSubmitButton')
 formSubmissionButton.addEventListener('click', (e) => {
   e.preventDefault()
   const formContents = getFormContents()
-  sendFormContents(formContents)
+  try{
+    sendFormContents(formContents)
+  } catch (error){
+    return  
+  }
+  const p = document.createElement('p')
+  p.innerText = "Thank you for the message! We'll get back to you soon."
+  p.className = "messageSentConfirmationLine"
+  document.getElementById('hookConfMsgOntoThis').append(p)
+
+  document.querySelector('#contactNameField').value = null
+  document.querySelector('#contactPhoneField').value = null
+  document.querySelector('#contactCompanyField').value = null
+  document.querySelector('#contactEmailField').value = null
+  document.querySelector('#contactMessageField').value = null
 })
 
 // get form contents
@@ -65,7 +79,6 @@ function getFormContents(){
   formEmail : document.querySelector('#contactEmailField').value,
   formMessage : document.querySelector('#contactMessageField').value
   }
-  console.log("in getFormContents", formValues)
   return formValues
 }
 
