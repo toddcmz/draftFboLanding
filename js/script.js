@@ -1,68 +1,65 @@
 
 // front end validation copied from mailtrap example.
-// not sure this is strictly necessary, may keep for
-// expediency
-
-const constraints = {
-  contactNameField: {
-    presence: { allowEmpty: false }
-  },
-  contactPhoneField: {
-    presence: { allowEmpty: true }
-  },
-  contactCompanyField:{
-    presence: { allowEmpty: true }
-  },
-  contactEmailField: {
-    presence: { allowEmpty: false },
-    email: true
-  },
-  contactMessageField: {
-      presence: { allowEmpty: false }
-  }
-};
-
-const form = document.getElementById('contactForm');
-
-form.addEventListener('submit', function (event) {
-  const formValues = {
-      contactNameField: form.elements.contactNameField.value,
-      contactPhoneField: form.elements.contactPhoneField.value,
-      contactCompanyField: form.elements.contactCompanyField.value,
-      contactEmailField: form.elements.contactEmailField.value,
-      contactMessageField: form.elements.contactMessageField.value
-  };
-
-  const errors = validate(formValues, constraints);
-
-  if (errors) {
-    event.preventDefault();
-    const errorMessage = Object
-        .values(errors)
-        .map(function (fieldValues) { return fieldValues.join(', ')})
-        .join("\n");
-
-    alert(errorMessage);
-  }
-}, false);
+// uses external library for validate() function.
+// remaining code just checks for empty field values.
 
 // my custom form submission code, sending to contact.php
 const formSubmissionButton = document.getElementById('contactSubmitButton')
+
+const constraints = {
+  formName: {
+    presence: { allowEmpty: false }
+  },
+  formPhone: {
+    presence: { allowEmpty: true }
+  },
+  formCompany:{
+    presence: { allowEmpty: true }
+  },
+  formEmail: {
+    presence: { allowEmpty: false },
+    email: true
+  },
+  formMessage: {
+      presence: { allowEmpty: false }
+  }
+};
 
 // event listener for clicking the button
 formSubmissionButton.addEventListener('click', (e) => {
   e.preventDefault()
   const formContents = getFormContents()
+
+  //mailtrap code for validating form on the front end
+  const errors = validate(formContents, constraints);
+  if (errors) {
+    const errorMessage = Object
+        .values(errors)
+        .map(function (fieldValues) { return fieldValues.join(', ')})
+        .join("\n");
+    alert(errorMessage);
+    return
+  }
+  
+  // if contents are validated, send the email
   try{
     sendFormContents(formContents)
   } catch (error){
     return  
   }
+
+  // create msg conf line, remove prev msg if there's already one there, first
   const p = document.createElement('p')
   p.innerText = "Thank you for the message! We'll get back to you soon."
   p.className = "messageSentConfirmationLine"
-  document.getElementById('hookConfMsgOntoThis').append(p)
-
+  try{
+    const previous = document.getElementsByClassName("messageSentConfirmationLine")[0]
+    previous.remove()
+    document.getElementById('hookConfMsgOntoThis').append(p)
+  } catch (error){
+    document.getElementById('hookConfMsgOntoThis').append(p)
+  }
+  // empty contact form fields.
   document.querySelector('#contactNameField').value = null
   document.querySelector('#contactPhoneField').value = null
   document.querySelector('#contactCompanyField').value = null
@@ -70,7 +67,7 @@ formSubmissionButton.addEventListener('click', (e) => {
   document.querySelector('#contactMessageField').value = null
 })
 
-// get form contents
+// get form contents function
 function getFormContents(){
   const formValues = {
   formName : document.querySelector('#contactNameField').value,
@@ -82,7 +79,7 @@ function getFormContents(){
   return formValues
 }
 
-//send contents to php file
+//send contents to php file functino
 function sendFormContents(formContents){
   fetch("contact.php", {
     "method":"POST",

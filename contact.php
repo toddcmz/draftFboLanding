@@ -29,15 +29,16 @@
   }
 
   if (empty($errors)){
-    $emailToAddress = 'toddcmz@gmail.com';
-    $emailSubject = 'testing fbo growth contact form';
-    $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=utf-8'];
-    $bodyParagraphs = ["Name: {$name}", "Phone: {$phone}", "Company: {$company}", "Email: {$email}", "Message:", $message];
-    $body = join(PHP_EOL, $bodyParagraphs);
+    $to = "toddcmz@gmail.com";
+    $subject = 'testing contact';
+    $from = "todd@devtlc.co";
+    $headers = ['From' => $from, 'Reply-To' => $from, 'Content-type' => 'text/html; charset=utf-8'];
+    $messageInfo = ["Name: {$name}", "Phone: {$phone}", "Company: {$company}", "Email: {$email}", "Message:", $message];
+    $message = join(PHP_EOL, $messageInfo);
 
-    mail($emailToAddress, $emailSubject, $body, $headers);
-    echo "sent the email";
-    echo $body;
+    mail($to, $subject, $message, $headers);
+    echo "message sent \n";
+    echo $message;
   }
 
   if (!empty($errors)) {
