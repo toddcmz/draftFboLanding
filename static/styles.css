@@ -256,40 +256,84 @@ html{
   margin-bottom: 2rem;
 }
 
-.servicesDetailsButton{
+@media (max-width: 1100px){
+  .servicesCardsContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Courses & Workshops List */
+.coursesWorkshopsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 2rem auto 2rem auto;
+}
+
+.coursesWorkshopsTitleDescriptionContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.coursesWorkshopsSectionTitle{
+
+}
+
+.coursesWorkshopsSectionDescription{
+
+}
+
+.contactUsLinkCoursesWorkshops{
+
+}
+
+.goToSalesConceptsButton{
   height: 2.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 4px;
   border: none;
   box-shadow: -3px 3px 8px #393939;
-}
-
-.seeCoursesButton{
   background-color: #336284;
   color: white;
+  max-width: 9rem;
+  margin: auto;
 }
 
-.seeOtherServicesButton{
-  background-color: #f6c044;
-  color:#393939;
-}
-
-.seeCoursesButton:hover{
+.goToSalesConceptsButton:hover{
   background-color: #267cb2;
   cursor: pointer;
 }
 
-.seeOtherServicesButton:hover{
-  background-color: #f7b00b;
-  cursor: pointer;
+.coursesWorkshopsListSubcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 }
 
-@media (max-width: 1100px){
-  .servicesCardsContainer{
-    flex-direction: column;
-    align-items: center;
-  }
+.coursesWorkshopsListTitle{
+
+}
+
+.coursesWorkshopsListDescription{
+  max-width: 40rem;
+}
+
+.coursesWorkshopsList{
+  list-style-type: none;
+  max-width: 35rem;
+}
+
+li > h4::before{
+  content: "";
+  border: 3px solid #f6c044;
+  margin-right: 1.5rem;
 }
 
 /* About */
@@ -334,7 +378,6 @@ html{
   color: white;
   width: 25rem;
 }
-
 
 .headshot{
   width:200px;
