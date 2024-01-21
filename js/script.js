@@ -2,20 +2,20 @@
 // show / hide courses and workshops
 function toggleCourses(){
   let buttonState = document.querySelector(".coursesList")
-  if (buttonState.style.display === "none"){
-    buttonState.style.display = "block"
-  } else {
+  if (buttonState.style.display === "block"){
     buttonState.style.display = "none"
+  } else {
+    buttonState.style.display = "block"
   }
 }
 
 // show / hide courses and workshops
 function toggleWorkshops(){
   let buttonState = document.querySelector(".workshopsList")
-  if (buttonState.style.display === "none"){
-    buttonState.style.display = "block"
-  } else {
+  if (buttonState.style.display === "block"){
     buttonState.style.display = "none"
+  } else {
+    buttonState.style.display = "block"
   }
 }
 

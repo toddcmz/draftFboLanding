@@ -263,16 +263,21 @@ html{
   }
 }
 
+.subSectionBreakLine{
+  width: 20%;
+  border-top: 1px solid #ada8a8;
+  margin: 1.5rem auto 4rem auto;
+}
+
 /* Courses & Workshops List */
 
 .coursesWorkshopsContainer{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2rem;
-  max-width: 600px;
-  margin: 2rem auto 2rem auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:start;
+  gap: 1rem;
+  margin: 2rem;
 }
 
 .coursesWorkshopsListSubcontainer{
@@ -293,7 +298,7 @@ html{
   box-shadow: -3px 3px 8px #393939;
   background-color: #336284;
   color: white;
-  max-width: 9rem;
+  max-width: 18rem;
   margin: auto;
 }
 
@@ -311,7 +316,7 @@ html{
   box-shadow: -3px 3px 8px #393939;
   background-color: #f6c044;
   color:#393939;
-  max-width: 9rem;
+  max-width: 18rem;
   margin: auto;
 }
 
@@ -321,7 +326,7 @@ html{
 }
 
 .coursesWorkshopsListDescription{
-  max-width: 40rem;
+  max-width: 30rem;
 }
 
 .coursesList{
@@ -351,14 +356,18 @@ li > p{
 .coursesWorkshopsEnrollContainer{
   display: flex;
   flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
 }
 
 .coursesWorkshopsEnrollTitle{
   align-self: center;
+  margin-bottom: 0.5rem;
 }
 
 .coursesWorkshopsEnrollDescription{
   padding: 0 2rem 0 2rem;
+  margin-bottom: 2rem;
 }
 
 .contactUsLinkCoursesWorkshops{
@@ -388,13 +397,20 @@ li > p{
   cursor: pointer;
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1150px){
+
+  .coursesWorkshopsContainer{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0;
+  }
 
   .coursesWorkshopsListDescription{
     text-align: center;
   }
 
-  .coursesWorkshopsList{
+  .coursesList, .workshopsList{
     padding: 0 2rem 0 2rem;
   }
 
@@ -421,6 +437,7 @@ li > p{
     font-size: 0.8rem;
     text-align: center;
   }
+
 }
 
 /* About */
