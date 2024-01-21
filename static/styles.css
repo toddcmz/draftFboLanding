@@ -264,6 +264,7 @@ html{
 }
 
 /* Courses & Workshops List */
+
 .coursesWorkshopsContainer{
   display: flex;
   flex-direction: column;
@@ -274,21 +275,60 @@ html{
   margin: 2rem auto 2rem auto;
 }
 
-.coursesWorkshopsTitleDescriptionContainer{
+.coursesWorkshopsListSubcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.coursesWorkshopsListTitle{
+
+}
+
+.coursesWorkshopsListDescription{
+  max-width: 40rem;
+}
+
+.coursesWorkshopsList{
+  list-style-type: none;
+  max-width: 35rem;
+}
+
+li > h4::before{
+  content: "";
+  border: 3px solid #f6c044;
+  margin-right: 1.5rem;
+}
+
+
+li > p{
+  padding-left: 1.85rem;
+  margin-bottom: 2.5rem;
+}
+
+.coursesWorkshopsEnrollContainer{
   display: flex;
   flex-direction: column;
 }
 
-.coursesWorkshopsSectionTitle{
-
+.coursesWorkshopsEnrollTitle{
+  align-self: center;
 }
 
-.coursesWorkshopsSectionDescription{
-
+.coursesWorkshopsEnrollDescription{
+  padding: 0 2rem 0 2rem;
 }
 
 .contactUsLinkCoursesWorkshops{
+  text-decoration: none;
+  color:#336284;
+}
 
+.goToSalesConceptsButtonLinkContainer{
+  align-self: center;
 }
 
 .goToSalesConceptsButton{
@@ -309,31 +349,39 @@ html{
   cursor: pointer;
 }
 
-.coursesWorkshopsListSubcontainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-}
+@media (max-width: 1100px){
 
-.coursesWorkshopsListTitle{
+  .coursesWorkshopsListDescription{
+    text-align: center;
+  }
 
-}
+  .coursesWorkshopsList{
+    padding: 0 2rem 0 2rem;
+  }
 
-.coursesWorkshopsListDescription{
-  max-width: 40rem;
-}
+  li > h4::before{
+    content: "";
+    margin: 0;
+    border: none;
+  }
 
-.coursesWorkshopsList{
-  list-style-type: none;
-  max-width: 35rem;
-}
+  li::before{
+    content: "";
+    border: 6px solid #f6c044;
+    display: block;
+    width: 1px;
+    margin: 0 auto 1rem auto;
+  }
 
-li > h4::before{
-  content: "";
-  border: 3px solid #f6c044;
-  margin-right: 1.5rem;
+  li > h4{
+    text-align: center;
+  }
+
+  li > p{
+    padding: 0;
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
 
 /* About */
