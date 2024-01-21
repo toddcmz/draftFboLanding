@@ -1,4 +1,24 @@
 
+// show / hide courses and workshops
+function toggleCourses(){
+  let buttonState = document.querySelector(".coursesList")
+  if (buttonState.style.display === "none"){
+    buttonState.style.display = "block"
+  } else {
+    buttonState.style.display = "none"
+  }
+}
+
+// show / hide courses and workshops
+function toggleWorkshops(){
+  let buttonState = document.querySelector(".workshopsList")
+  if (buttonState.style.display === "none"){
+    buttonState.style.display = "block"
+  } else {
+    buttonState.style.display = "none"
+  }
+}
+
 // front end validation copied from mailtrap example.
 // uses external library for validate() function.
 // remaining code just checks for empty field values.

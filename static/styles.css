@@ -284,17 +284,56 @@ html{
   padding: 0 2rem 0 2rem;
 }
 
-.coursesWorkshopsListTitle{
+.seeCoursesButton{
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 4px;
+  border: none;
+  box-shadow: -3px 3px 8px #393939;
+  background-color: #336284;
+  color: white;
+  max-width: 9rem;
+  margin: auto;
+}
 
+.seeCoursesButton:hover{
+  background-color: #267cb2;
+  cursor: pointer;
+}
+
+.seeWorkshopsButton{
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 4px;
+  border: none;
+  box-shadow: -3px 3px 8px #393939;
+  background-color: #f6c044;
+  color:#393939;
+  max-width: 9rem;
+  margin: auto;
+}
+
+.seeWorkshopsButton:hover{
+  background-color:#f1c661;
+  cursor: pointer;
 }
 
 .coursesWorkshopsListDescription{
   max-width: 40rem;
 }
 
-.coursesWorkshopsList{
+.coursesList{
   list-style-type: none;
   max-width: 35rem;
+  display: none;
+}
+
+.workshopsList{
+  list-style-type: none;
+  max-width: 35rem;
+  display: none;
 }
 
 li > h4::before{
