@@ -29,9 +29,9 @@
   }
 
   if (empty($errors)){
-    $to = "toddcmz@gmail.com";
+    $to = "ewassom@fbogrowth.com";
     $subject = 'testing contact';
-    $from = "todd@devtlc.co";
+    $from = "contact@fbogrowth.com";
     $headers = ['From' => $from, 'Reply-To' => $from, 'Content-type' => 'text/html; charset=utf-8'];
     $messageInfo = ["Name: {$name}", "Phone: {$phone}", "Company: {$company}", "Email: {$email}", "Message:", $message];
     $message = join(PHP_EOL, $messageInfo);
