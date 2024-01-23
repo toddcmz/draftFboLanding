@@ -248,12 +248,9 @@ html{
   color: #393939;
 }
 
-.servicesButtonsContainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 4rem;
-  margin-bottom: 2rem;
+.contactUsLinkServices{
+  text-decoration: none;
+  color:#336284;
 }
 
 @media (max-width: 1100px){
@@ -299,7 +296,7 @@ html{
   background-color: #336284;
   color: white;
   max-width: 18rem;
-  margin: auto;
+  margin: 1rem auto 0 auto;
 }
 
 .seeCoursesButton:hover{
@@ -314,14 +311,14 @@ html{
   border-radius: 4px;
   border: none;
   box-shadow: -3px 3px 8px #393939;
-  background-color: #f6c044;
-  color:#393939;
+  background-color:#336284;
+  color:white;
   max-width: 18rem;
-  margin: auto;
+  margin: 1rem auto 0 auto;
 }
 
 .seeWorkshopsButton:hover{
-  background-color:#f1c661;
+  background-color:#267cb2;
   cursor: pointer;
 }
 
@@ -386,14 +383,13 @@ li > p{
   border-radius: 4px;
   border: none;
   box-shadow: -3px 3px 8px #393939;
-  background-color: #336284;
-  color: white;
-  max-width: 9rem;
+  background-color:#f6c044;
+  color:#393939;
   margin: auto;
 }
 
 .goToSalesConceptsButton:hover{
-  background-color: #267cb2;
+  border:2px solid #666363;
   cursor: pointer;
 }
 
