@@ -251,15 +251,20 @@
     </h1>
     <div class="contactInfoAndFormContainer">
       <div class="contactInfoDetailsContainer">
-        <h3>ewassom@fbogrowth.com</h3>
+        <h3>e.wassom@fbogrowth.com</h3>
         <h3>720.241.6765</h3>
       </div>
       <div class="contactFormContainer">
-      <form action="" class="contactForm" id="contactForm">
+      <form  action="https://api.web3forms.com/submit" method="POST" class="contactForm" id="contactForm">
+        <input type="hidden" name="access_key" value="e017f15a-6c5a-4f33-b473-b7b2f60cf155" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
         <div class="formNamePhoneContainer">
           <div class="formNameContainer">
             <label for="contactNameField">Name*</label>
-              <input 
+              <input
+                required 
                 type="text" 
                 id="contactNameField" 
                 name="contactNameField" 
@@ -287,6 +292,7 @@
             placeholder="Enter your company (optional)">
         <label for="contactEmailField">Email*</label>
           <input 
+            required
             type="email" 
             id="contactEmailField" 
             name="contactEmailField" 
@@ -295,6 +301,7 @@
           >
         <label for="contactMessageField">Message*</label>
           <textarea 
+            required
             class="contactFieldFullMessage" 
             name="contactMessageField" 
             id="contactMessageField" 

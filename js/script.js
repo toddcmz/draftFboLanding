@@ -24,7 +24,7 @@ function toggleWorkshops(){
 // remaining code just checks for empty field values.
 
 // my custom form submission code, sending to contact.php
-const formSubmissionButton = document.getElementById('contactSubmitButton')
+/* const formSubmissionButton = document.getElementById('contactSubmitButton')
 
 const constraints = {
   formName: {
@@ -44,9 +44,9 @@ const constraints = {
       presence: { allowEmpty: false }
   }
 };
-
+ */
 // event listener for clicking the button
-formSubmissionButton.addEventListener('click', (e) => {
+/* formSubmissionButton.addEventListener('click', (e) => {
   e.preventDefault()
   const formContents = getFormContents()
 
@@ -85,10 +85,10 @@ formSubmissionButton.addEventListener('click', (e) => {
   document.querySelector('#contactCompanyField').value = null
   document.querySelector('#contactEmailField').value = null
   document.querySelector('#contactMessageField').value = null
-})
+}) */
 
 // get form contents function
-function getFormContents(){
+/* function getFormContents(){
   const formValues = {
   formName : document.querySelector('#contactNameField').value,
   formPhone : document.querySelector('#contactPhoneField').value,
@@ -112,4 +112,4 @@ function sendFormContents(formContents){
   }).then(function(data){
     console.log(data)
   })
-}
+} */
